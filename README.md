@@ -3,9 +3,9 @@ In App Library Version 4
 library created by Faraz Hussain & Yasir khan
 
 
-1: Import YFinapplibraryV4 as a Module in your App\n
+1: Import YFinapplibraryV4 as a Module in your App
 
-2: Implement this in gradle\n
+2: Implement this in gradle
 
        android{
         compileOptions {
@@ -14,9 +14,11 @@ library created by Faraz Hussain & Yasir khan
             }
         }
 
-        implementation project(":YFinapplibraryV4")
+        dependencies{
+            implementation project(":YFinapplibraryV4")
+        }
 
-3: Implementation in Java\n
+3: Implementation in Java
 
         BillingProcessor billingProcessor = new BillingProcessor(this, "licence_key_if_needed", "android.test.purchased"), new OnBillingProcessorListener() {
             @Override
