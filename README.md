@@ -1,14 +1,13 @@
 # SampleInAppPurchases
 In App Library Version 4
 library created by Yasir khan
-                                                      implementation 
 
 
-       implement this in gradle
+implement this in gradle
 
-android{
+       android{
 
- compileOptions {
+        compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8
         }
@@ -23,11 +22,7 @@ android{
 
 
 
-
-
-
-
-BillingProcessor billingProcessor = new BillingProcessor(this, "", getString(R.string.SKU_PRODUCT_ID), new OnBillingProcessorListener() {
+            BillingProcessor billingProcessor = new BillingProcessor(this, "", getString(R.string.SKU_PRODUCT_ID), new OnBillingProcessorListener() {
             @Override
             public void onBillingProcessorConnected() {
             }
